@@ -12,7 +12,7 @@ export default function rangePropType(props) {
     return new Error('"minValue" and "maxValue" must be a number');
   }
 
-  if (minValue >= maxValue) {
+  if (minValue > maxValue) {
     return new Error('"minValue" must be smaller than "maxValue"');
   }
 }
