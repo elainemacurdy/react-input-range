@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidchin/react-input-range.git"
+    "url": "https://github.com/elainemacurdy/react-input-range.git"
   },
   "main": "lib/js/index.js",
   "types": "react-input-range.d.ts",
@@ -87,6 +87,7 @@
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint src/js/ --ext .js --ext .jsx",
     "lint:scss": "sass-lint --verbose --no-exit",
+    "prepare": "npm run prepublish",
     "prepublish": "npm run build",
     "pretest": "npm run lint",
     "test": "karma start --single-run",
