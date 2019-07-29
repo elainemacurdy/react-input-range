@@ -87,7 +87,7 @@
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint src/js/ --ext .js --ext .jsx",
     "lint:scss": "sass-lint --verbose --no-exit",
-    "prepare": "npm run prepublish",
+    "postinstall": "npm run prepublish",
     "prepublish": "npm run build",
     "pretest": "npm run lint",
     "test": "karma start --single-run",
